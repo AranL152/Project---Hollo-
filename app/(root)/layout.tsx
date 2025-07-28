@@ -1,13 +1,14 @@
 import MobileNav from "@/components/MobileNav";
 import Sidebar from "@/components/Sidebar";
 import Image from "next/image";
+import { redirect } from "next/navigation";
 
 export default function RootLayout({
   children,
 }: Readonly<{
   children: React.ReactNode;
 }>) {
-  const loggedIn = { firstName: 'Adrian', lastName: 'JSM' };
+  const loggedIn = { firstName: 'Aran', lastName: 'Lum' };
 
   return (
     <main className="flex h-screen w-full font-inter">
